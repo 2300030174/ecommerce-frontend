@@ -22,9 +22,8 @@ function App() {
   
   return (
     <>
-    <Router>
+    <Router basename="/ecommerce">
       <Routes>
-        <Route basename="/ecommerce"/>
         <Route path="/" element={<HomePage />}>
           <Route index element={<AboutUs />} />
           <Route path="home" element={<Home />} />
